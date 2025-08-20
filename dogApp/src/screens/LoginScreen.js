@@ -17,13 +17,6 @@ export default function TelaLogin({ navigation }) {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
             <View style={estilos.container}>
 
-                <TouchableOpacity style={estilos.botaoVoltar} onPress={() => navigation.navigate('First')}>
-                    <Image
-                        source={require('../images/arrow.png')}
-                        style={estilos.iconeVoltar}
-                    />
-                </TouchableOpacity>
-
                 <Text style={estilos.titulo}>Acesse</Text>
                 <View style={estilos.grupoInputs}>
                     <Text style={estilos.subtitulo}>Insira seus dados!</Text>
@@ -87,24 +80,13 @@ const estilos = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         paddingLeft: 20,
-        paddingTop: 30,
+        paddingTop: 10,
         paddingRight: 30,
         paddingBottom: 50,
     },
     grupoInputs: {
-        paddingTop: 10,
+        paddingTop: 5,
      },
-
-    botaoVoltar: {
-        position: 'absolute',
-        paddingLeft: 30,
-        paddingTop: 20,
-    },
-
-    iconeVoltar: {
-        height: 30,
-        width: 30,
-    },
 
     areaBotoes: {
         flexDirection: 'row',
